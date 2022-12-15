@@ -31,7 +31,7 @@ $('.slider_prod').slick({
   slidesToShow: 1,
   adaptiveHeight: true,
   swipe: false,
-  arrows:false
+ 
 });
 
 $('.slider-dots .slider-dots__item').click(function() {
