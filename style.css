@@ -481,9 +481,10 @@ a
     padding-top: 30px;
      padding-bottom: 20px;
     background-color:#ffffff;
-    min-height: 180px;
+    min-height: 186px;
     text-align: center;
      padding-left: 36.5%;
+     border-left: 1px solid rgb(68, 68, 68);
 }
 .text h2
 {
@@ -505,7 +506,7 @@ a
     font-weight: 400;
    
 }
-.slick-list
+.slider .slick-list
 {
     max-width: 920px;
     overflow: hidden;
@@ -581,7 +582,7 @@ a
 {
     font-size: 0;
     position: absolute;
-    bottom: 0;
+    bottom:10px;
     width: 60px;
     height: 50px;
     z-index: 10;
@@ -688,52 +689,67 @@ a
 {
     z-index: 5;
     width: 100%;
-    background-color:#1e1e1e;
+    
+   
+    background-color:#ffffff;
     /* box-shadow: 0 16px 30px 1px #000000; */
-    padding: 20px 125px 120px;
+    padding: 110px 125px 120px;
     display: flex;
     align-items:center;
     flex-direction: column;
     box-sizing:border-box;
     position: relative;
 }
+.prod_box_BG
+{
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    background: url(./images/sect-bg-3\ \(1\).webp);
+}
+.prod_text
+{
+   max-width: 1200px;
+   margin:auto;
+   
+
+
+}
 .prod_title h1
 {
-    margin-top: 50px;
-    margin-left: 0;
-      font-size:32px ;
-      line-height:30px ;
-    font-size: calc(29px + 2* (100vw / 1900));
-    line-height:calc(31px + 4 * (100vw / 1900));
+    position: relative;
+    line-height:30px;
+    font-size: 42px;
+    /* font-size: calc(29px + 2* (100vw / 1900));
+    line-height:calc(31px + 4 * (100vw / 1900)); */
     margin-bottom: 40px;
-    color:#bc8c58;
+    color:#252525;
     /* text-shadow: 0 0 8px #bc8c58; */
-    font-weight: 300;
+    font-weight: 600;
     
 }
 .prod_title p
 {
-    
-    font-size: calc(17px + 7* (100vw / 1900));
-    line-height:calc(14px + 11* (100vw / 1900));
-    color:white;
-    margin-left: 25px;
+    text-align: left;
+    /* font-size: calc(17px + 7* (100vw / 1900));
+    line-height:calc(14px + 11* (100vw / 1900)); */
+    color:rgb(27, 27, 27);
+   
     position: relative;
     max-width: 800px;
     margin-bottom: 30px;
-    font-weight: 300;
+    font-weight: 500;
+    max-width: 450px;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
  
 
 
-.prod_title 
-{
-    text-align: center;
-}
-.prod_title h1
-{
-    margin-bottom: 30px;
-}
+
+
 
 .prod_slider
 {
@@ -813,15 +829,15 @@ a
 }
 .slider_prod .slick-list 
 {
-    width: 1050px;
+    width: 1025px;
     margin-left: 300px;
     overflow: hidden;
 }
 
 .prod_img
 {
-    width: 525px; /*07.12.2022*/
-    height: 419px;/*07.12.2022*/
+    width: 651px; /*07.12.2022*/
+    height: 422px;/*07.12.2022*/
 }
 .prod_img img
 {
