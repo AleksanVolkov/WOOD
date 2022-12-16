@@ -416,7 +416,7 @@ const submit = document.querySelector('#form').addEventListener('submit', functi
         case 5:
           quiz_field.style.transform = "translateX(-400%)";
           card = 4;
-          nextQuestion.style.display="block";
+          nextQuestion.style.display="flex";
           break;
         
       }

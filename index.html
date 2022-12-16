@@ -335,7 +335,7 @@
                 </div>
             </div>
             <div class="keis">
-                <h1>наши завершенные заказы</h1>
+                <h1>Реализованные объекты</h1>
                 <div class="content_wraper">
                     <div class="gallery_box">
                         <div class="gal_pic_top">
@@ -375,9 +375,7 @@
                                 <h3>150 м2</h3>
                                 <h3>7350 руб.</h3>
                             </div>
-                            <div class="btn">
-                                <span>подобрать материал</span>
-                            </div>
+                            <div class="btn_modal">подобрать материал</div>
                         </div>
                     </div>
                 </div>
@@ -392,61 +390,65 @@
                 <div class="quiz_field">
                     <div class="one quest">
                         <div class="title">Куда требуется планкен?</div>
-                        <div class="one_row">
-                            <div class="radio_btn">
-                                <input id="cliсk1" class="radio" type="radio" name="test"  checked="checked"  value="Фасад">
-                                <label class="label" for="cliсk1" >
-                                    <div class="img_quiz">
-                                        <img src="./images/IMG-20210907-WA0002.webp" alt="">
-                                        <p>Фасад</p>
-                                    </div>
+                        <div class="one_box">
+                            <div class="one_row">
+                                <div class="radio_btn">
+                                    <input id="cliсk1" class="radio" type="radio" name="test"  checked="checked"  value="Фасад">
+                                    <label class="label" for="cliсk1" >
+                                        <div class="img_quiz">
+                                            <img src="./images/IMG-20210907-WA0002.webp" alt="">
+                                            <p>Фасад</p>
+                                        </div>
+                                   
+                                    </label>
+                                </div>
                                
-                                </label>
+                                <div class="radio_btn">
+                                    <input id="cliсk2" class="" type="radio" name="test"  checked="checked"  value="Подшива">
+                                    <label class="label" for="cliсk2" >
+                                        <div class="img_quiz">
+                                            <img src="./images/IMG-20210323-WA0002.webp" alt="">
+                                            <p>Подшива</p>
+                                        </div>
+                                       
+                                    </label>
+                                </div>
+                                <div class="radio_btn">
+                                    <input id="cliсk3" class="" type="radio" name="test"  checked="checked"  value="Забор">
+                                    <label class="label" for="cliсk3" >
+                                        <div class="img_quiz">
+                                            <img src="./images/IMG-20210324-WA0015.webp" alt="">
+                                            <p>Забор</p>
+                                        </div>
+                                       
+                                    </label>
+                                </div>
+                        
                             </div>
-                           
-                            <div class="radio_btn">
-                                <input id="cliсk2" class="" type="radio" name="test"  checked="checked"  value="Подшива">
-                                <label class="label" for="cliсk2" >
-                                    <div class="img_quiz">
-                                        <img src="./images/IMG-20210323-WA0002.webp" alt="">
-                                        <p>Подшива</p>
-                                    </div>
-                                   
-                                </label>
+                            <div class="two_row">
+                                <div class="radio_btn">
+                                    <input id="cliсk4" class="" type="radio" name="test"  checked="checked"  value="Стены и потолки">
+                                    <label class="label" for="cliсk4" >
+                                        <div class="img_quiz">
+                                            <img src="./images/IMG-20210323-WA0010.webp" alt="">
+                                            <p>Стены и потолки</p>
+                                        </div>
+                                       
+                                    </label>
+                                </div>
+                                <div class="radio_btn">
+                                    <input id="cliсk5" class="" type="radio" name="test"  checked="checked"  value="Другое">
+                                    <label class="label" for="cliсk5" >
+                                        <div class="img_quiz">
+                                            <img src="./images/IMG-20210323-WA0132.webp" alt="">
+                                            <p>Другое</p>
+                                        </div>
+                                       
+                                    </label>
+                                </div>
                             </div>
-                            <div class="radio_btn">
-                                <input id="cliсk3" class="" type="radio" name="test"  checked="checked"  value="Забор">
-                                <label class="label" for="cliсk3" >
-                                    <div class="img_quiz">
-                                        <img src="./images/IMG-20210324-WA0015.webp" alt="">
-                                        <p>Забор</p>
-                                    </div>
-                                   
-                                </label>
-                            </div>
-                    
-                        </div>
-                        <div class="two_row">
-                            <div class="radio_btn">
-                                <input id="cliсk4" class="" type="radio" name="test"  checked="checked"  value="Стены и потолки">
-                                <label class="label" for="cliсk4" >
-                                    <div class="img_quiz">
-                                        <img src="./images/IMG-20210323-WA0010.webp" alt="">
-                                        <p>Стены и потолки</p>
-                                    </div>
-                                   
-                                </label>
-                            </div>
-                            <div class="radio_btn">
-                                <input id="cliсk5" class="" type="radio" name="test"  checked="checked"  value="Другое">
-                                <label class="label" for="cliсk5" >
-                                    <div class="img_quiz">
-                                        <img src="./images/IMG-20210323-WA0132.webp" alt="">
-                                        <p>Другое</p>
-                                    </div>
-                                   
-                                </label>
-                            </div>
+    
+    
                         </div>
                         <div class="digit"><h1>1/6</h1></div>
                         
@@ -488,56 +490,60 @@
                     </div>
                     <div class="three quest">
                         <div class="title">Расстоянте от объекта до МКАД?</div>
-                        <div class="one_col">
-                            <div class="radio_btn">
-                                <input id="one_km" class="bool"  type="radio" name="test"  checked="checked"  value="до 50 км.">
-                                <label class="label" for="one_km" >
-                                    <div class="check_one_quiz">
-                                        <p>до 50 км.</p>
-                                        
-                                    </div>
+                        <div class="three_box">
+                            <div class="one_col">
+                                <div class="radio_btn">
+                                    <input id="one_km" class="bool"  type="radio" name="test"  checked="checked"  value="до 50 км.">
+                                    <label class="label" for="one_km" >
+                                        <div class="check_one_quiz">
+                                            <p>до 50 км.</p>
+                                            
+                                        </div>
+                                   
+                                    </label>
+                                </div>
                                
-                                </label>
+                                <div class="radio_btn">
+                                    <input id="two_km" class="" type="radio" name="test"  checked="checked"  value="от 50 км. до 100 км.">
+                                    <label class="label" for="two_km" >
+                                        <div class="check_one_quiz active_two_quiz">
+                                            <p>от 50 км. до 100 км.</p>
+                                            
+                                            
+                                        </div>
+                                       
+                                    </label>
+                                </div>
+                                <div class="radio_btn">
+                                    <input id="three_km" class="" type="radio" name="test"  checked="checked"  value="от 100 км. до 200 км.">
+                                    <label class="label" for="three_km" >
+                                        <div class="check_one_quiz active_two_quiz">
+                                            <p>от 100 км. до 200 км.</p>
+                                            
+                                            
+                                        </div>
+                                       
+                                    </label>
+                                </div>
+                                <div class="radio_btn">
+                                    <input id="four_km" class="" type="radio" name="test"  checked="checked"  value="свыше 200 км.">
+                                    <label class="label" for="four_km" >
+                                        <div class="check_one_quiz active_two_quiz">
+                                            <p>свыше 200 км.</p>
+                                            
+                                            
+                                        </div>
+                                       
+                                    </label>
+                                </div>
+                                
                             </div>
-                           
-                            <div class="radio_btn">
-                                <input id="two_km" class="" type="radio" name="test"  checked="checked"  value="от 50 км. до 100 км.">
-                                <label class="label" for="two_km" >
-                                    <div class="check_one_quiz active_two_quiz">
-                                        <p>от 50 км. до 100 км.</p>
-                                        
-                                        
-                                    </div>
-                                   
-                                </label>
+                            <div class="map_img">
+                                <img src="./images/map-removebg-preview-removebg-preview-removebg-preview.png" alt="">
                             </div>
-                            <div class="radio_btn">
-                                <input id="three_km" class="" type="radio" name="test"  checked="checked"  value="от 100 км. до 200 км.">
-                                <label class="label" for="three_km" >
-                                    <div class="check_one_quiz active_two_quiz">
-                                        <p>от 100 км. до 200 км.</p>
-                                        
-                                        
-                                    </div>
-                                   
-                                </label>
-                            </div>
-                            <div class="radio_btn">
-                                <input id="four_km" class="" type="radio" name="test"  checked="checked"  value="свыше 200 км.">
-                                <label class="label" for="four_km" >
-                                    <div class="check_one_quiz active_two_quiz">
-                                        <p>свыше 200 км.</p>
-                                        
-                                        
-                                    </div>
-                                   
-                                </label>
-                            </div>
-                            
+    
                         </div>
-                        <div class="map_img">
-                            <img src="./images/map-removebg-preview-removebg-preview-removebg-preview.png" alt="">
-                        </div>
+
                         <div class="digit"><h1>3/6</h1></div>
                         
                     </div>
@@ -702,9 +708,9 @@
             </div>
         </section>
         
-        <div class="videoWrapper one">
+        <!-- <div class="videoWrapper one">
             <video autoplay muted loop class="video_item_one" src="./videos/prom_pokras_optim.mp4"></video>
-        </div>
+        </div> -->
           <!-- PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP -->
 
             <!-- <div class="quiz_box">
