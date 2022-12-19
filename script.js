@@ -6,20 +6,7 @@ $(document).ready(function(){
       autoplaySpeed:5000,
       // variableWidth: true,
       appendArrows:$('.why_right'),
-      responsive: [
-       
-        {
-          breakpoint: 600,
-      settings: {
-        arrows:false
-      }
-          
-        }
-       
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
+     
     });
   });
  /*            --------------------------                */

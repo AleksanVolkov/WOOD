@@ -4,7 +4,7 @@ body
     margin: 0;
     padding: 0;
     background-color:white;
-    height: auto;
+    /* height: auto; */
 }
 .no_select
 {
@@ -56,6 +56,18 @@ a
 .nav_mob
 {
     display: none;
+}
+.nav_mob
+{
+ background-color: rgba(53, 38, 38, 0);
+ display: flex;
+ justify-content: space-between;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 5;
+ width: 100%;
+ padding: 20px 15px;
 }
 .icon
 {
@@ -111,6 +123,8 @@ a
     height: 100vh;
     display: flex;
     justify-content: left;
+    padding-top: 50px;
+
 }
 .content
 {
@@ -668,6 +682,10 @@ a
     padding: 0 20px;
    
     
+}
+.form_box.two
+{
+    margin: 120px auto;
 }
 .form_text
 {
@@ -1422,7 +1440,7 @@ one_col .contact
     position: absolute;
     display: flex;
     background-color:white;
-    z-index: 10;
+    z-index:4;
     flex-direction: column;
     align-items:center;
     border: 2px solid #3a3a3a;
@@ -1724,20 +1742,40 @@ footer
     }
 }
 @media screen and (max-width:585px){
-
+    .nav_mob
+    {
+        display: flex;
+    }
+    .phone {
+        margin-left: 50px;
+        position: relative;
+        padding-top: 8px;
+    }
+    .phone::before {
+        
+        top: -6px;
+    }
     .content {
         margin-top: 10%;
         display: flex;
         flex-direction: column;
         padding: 20px;
+        
+    }
+    .img_box
+    {
+        display: none;
     }
     .top
     {
-        height: auto;
+        height: 100vh;
     }
     .top h1
     {
-        font-size: 14px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 36px;
+        margin-top: 80px;
     }
     .top p
     {
@@ -1765,6 +1803,16 @@ footer
         line-height: 18px;
         
     }
+    .why_right .slick-arrow
+    {
+        top: 490px;
+    }
+    .why_right .slick-arrow.slick-prev {
+        right: 0;
+    }
+    .why_right .slick-arrow.slick-next {
+        left: 0;
+    }
     .prod_box
     {
         padding: 20px 0 30px;
@@ -1778,6 +1826,9 @@ footer
         .text {
         padding: 15px;
         border: none;
+    }
+    .form_box.two {
+        margin: 10px auto 80px;
     }
     .form_text h2 {
         font-size: 24px;
@@ -2099,6 +2150,9 @@ body
 }
 
 @media screen and (max-width:400px){
+
+
+    
     .one_box {
         padding: 70px 0;
     }
