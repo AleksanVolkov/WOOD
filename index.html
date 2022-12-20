@@ -60,7 +60,7 @@
                     
                      <br>от 53 руб/м2 <br>с доставкой по всей Беларуси</h1>
                 <h1 class="mobil_h1">производственная покраска доски с доставкой по всей Беларуси</h1>
-                <div class="btn">
+                <div class="btn" id="btn_stat">
                     <span>подобрать материал</span>
                 </div>
                 <p>*Получите бесплатный расчет стоимости крашеной доски</p>
@@ -319,7 +319,7 @@
                             <input type="text">
                             <label for="">Введите контактный телефон</label>
                             <input type="text" placeholder="+375 (__)___ __ __">
-                            <div class="btn_modal">подобрать материал</div>
+                            <div class="btn_modal" id="btn_modal">подобрать материал</div>
 
                         </div>
                         
@@ -354,7 +354,7 @@
                             <input type="text">
                             <label for="">Введите контактный телефон</label>
                             <input type="text" placeholder="+375 (__)___ __ __">
-                            <div class="btn_modal">подобрать материал</div>
+                            <div class="btn_modal" id="btn_modal">подобрать материал</div>
 
                         </div>
                         
@@ -400,7 +400,7 @@
                                 <h3>150 м2</h3>
                                 <h3>7350 руб.</h3>
                             </div>
-                            <div class="btn_modal">подобрать материал</div>
+                            <div class="btn_modal" id="btn_stat">подобрать материал</div>
                         </div>
                     </div>
                 </div>
@@ -733,29 +733,50 @@
             </div>
         </section>
         
-        <!-- <div class="videoWrapper one">
-            <video autoplay muted loop class="video_item_one" src="./videos/prom_pokras_optim.mp4"></video>
-        </div> -->
-          <!-- PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP -->
-
-            <!-- <div class="quiz_box">
-
-                <div class="var_field">
-                    <div value="1" name="1" id="var" class="var"></div>
-                    <div  value="2" name="2" id="var" class="var"></div>
-                    <div  value="3" name="3" id="var" class="var"></div>
-                    <div  value="4" name="4" id="var" class="var"></div>
-                </div>
-
-            </div> -->
+   
       
             
                
     </section>
 
+<div class="popup-fade">
+    <div class="popup">
+    
+
+        <form id="formS" class="form mb-3">
+            <!-- <img class="img" src="./img/email.png" alt=""> -->
+            <div class="input_group">
+                <label for="exampleInputEmail1" class="form-label">имя </label>
+                <input id="exampleInputEmail1" class="form-control" type="text" name="name">
+            </div>
+            <div class="input_group">
+                <label for="exampleInputEmail1" class="form-label">адрес электронной почты</label>
+                <input class="form-control" id="exampleInputEmail1" type="text" name="phone">
+            </div>
+            <button class="btn_m " type="submit" >отправить</button>
+            
+            <div id="message" class="alert alert-success">
+                <h4 class="alert-heading">Собщение отправленно!</h4>
+                <hr>
+                <p class="mb-0 w-40">В скорем времени с вами свяжется наш менеджер</p>
+            </div>
+            <div id="error" ></div>
+
+
+            <div class="load" id="load">
+                <hr/><hr/><hr/><hr/>
+                </div>
+        </form>
 
 
 
+
+
+   
+    </div>
+
+
+</div>
 
     <!-- <div class="video">
         <div class="videoWrapper">

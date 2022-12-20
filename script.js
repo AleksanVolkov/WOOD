@@ -415,8 +415,62 @@ const submit = document.querySelector('#form').addEventListener('submit', functi
   
   
   
-  
-  
+  /*pop up modal*/
+  const popupFade = document.querySelector('.popup-fade'),
+        popupClose = document.querySelector('#popup-close'),
+        modalSub = document.querySelectorAll('#btn_modal'),
+        popupOpen = document.querySelectorAll('#btn_stat'),
+        modalInput = document.querySelectorAll('#modal_input');
+        
+        const submitS = document.querySelector('#formS').addEventListener('submit', function(e){
+    
+
+          e.preventDefault();
+          
+          
+          let phone = this.phone.value,
+              name =  this.name.value;
+          
+          
+          let message = '<b>Сообщение из телеграмм</b>\n';
+             message+=`<b>имя клиента:</b>${name}\n`;
+             message+=`<b>телефон клиента:</b>${phone}`;
+          
+             console.log(message);
+             let TOKEN='5791633342:AAEOD_eKDntfzgcOco4R0WbOB9jN-SMXGyY';
+             let URI_API=`https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+             let CHAT_Id= '-1001830250177';
+            
+          // const errorM= document.querySelector('#error');
+          // const spiner = document.querySelector('#load');
+          // spiner.style.display = 'block';
+          
+          
+          axios.post(URI_API, {
+              chat_id:CHAT_Id,
+              parse_mode:'html',
+              text:message
+              
+          })
+        })
+        popupOpen.forEach(item=>{
+          item.addEventListener('click', function (e){
+            popupFade.style.display= "block";
+          })
+        })
+
+
+        popupClose.addEventListener('click', function(e){
+
+          e.preventDefault();
+          popupFade.style.display = "none";
+
+
+        })
+
+
+     
+
   
   
   
