@@ -179,7 +179,7 @@ nav a:hover
    border: none;
    font-family: inherit;
    max-width: 400px;
-   border-radius: 2px;
+   border-radius: 15px;
    padding: 20px 0;
    color: #fff;
    outline: none;
@@ -607,7 +607,7 @@ nav a:hover
 { 
     box-sizing:border-box;
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
     font-size: calc(17px + 7* (100vw / 1900));
     line-height:calc(14px + 11* (100vw / 1900));
     color:#bc8c58;
@@ -617,7 +617,7 @@ nav a:hover
 { 
    
     text-align: left;
-    font-weight: 300;
+    font-weight: 500;
     color:#bc8c58;
     margin-left: 20px;
     
@@ -692,6 +692,15 @@ nav a:hover
    
     
 }
+.two,.form_box .popup
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    border: none;
+    transform: none;
+    z-index: 3;
+}
 .form_box.two
 {
     margin: 150px auto;
@@ -699,6 +708,7 @@ nav a:hover
 .form_text
 {
     margin-top: 70px;
+    margin-right: 70px;
 }
 .form_text h2
 {
@@ -794,7 +804,7 @@ nav a:hover
     border: none;
     font-family: inherit;
     max-width: 400px;
-    border-radius: 2px;
+    border-radius: 15px;
     padding: 20px 0;
     color: #fff;
     outline: none;
@@ -844,10 +854,10 @@ nav a:hover
 {
     box-sizing:border-box;
     background-color: #1e1e1e;
-    margin: 0 auto ;
+    margin: 0 auto 190px;
     max-width: 1700px;
     display: flex;
-    padding: 20px 7% 75px;
+    padding: 20px 7% 70px;
     flex-direction: column;
     align-items:center;
     position: relative;
@@ -864,7 +874,7 @@ nav a:hover
     line-height:calc(14px + 18 * (100vw / 1900));
     margin-bottom: 40px;
     color:#bc8c58;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 
@@ -917,7 +927,7 @@ nav a:hover
 {
     box-sizing: border-box;
     
-    font-weight: 300;
+    font-weight: 400;
     font-size: calc(17px + 7* (100vw / 1900));
     line-height: calc(14px + 11* (100vw / 1900));
     color: #bc8c58;
@@ -937,7 +947,7 @@ nav a:hover
 {
     font-weight: 400;
     box-sizing:border-box;
-    border-radius:10px;
+    border-radius:15px;
     margin: 0 auto;
     background-color:#bc8c58;
     padding: 10px 15px;
@@ -991,10 +1001,21 @@ nav a:hover
 {
  
     font-size: 29px;
-    line-height: 31px;
+  
     margin-bottom: 40px;
     color:#bc8c58;
-    font-weight: 300;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.video_info h1 span
+{
+ 
+    font-size: 36px;
+    
+    margin-bottom: 40px;
+    color:#bc8c58;
+    font-weight: 500;
+    line-height: 1.4;
 }
 .video_info p
 {
@@ -1067,6 +1088,7 @@ nav a:hover
    
 }
 .box_btn h2 {
+    cursor: pointer;
     font-size: 36px;
     color: #6f9737;
     font-weight: 400;
@@ -1120,15 +1142,17 @@ nav a:hover
 }
 .quiz h1
 {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 0;
-    font-size: 32px;
+    
     line-height: 30px;
     font-size: calc(14px + 18* (100vw / 1900));
     line-height: calc(14px + 18 * (100vw / 1900));
     margin-bottom: 40px;
-    color: #ffffff;
-    font-weight: 300;
+    font-size: 36px;
+    color: #bc8c58;
+    font-weight: 400;
+    
     text-align: center;
 }
 .block
@@ -1180,7 +1204,7 @@ label
    border: none;
    font-family: inherit;
    width: 200px;
-   border-radius: 2px;
+   border-radius: 15px;
    padding: 10px 0;
    color: #fff;
    outline: none;
@@ -1211,7 +1235,7 @@ label
     width: 70px;
    background-color:#eebf6200;
    text-align: center;
-   border-radius:10px;
+   border-radius:15px;
    
 }
 .btn_quiz_prev p
@@ -1244,7 +1268,7 @@ label
 }
 .one_box
 {
-    padding: 40px 75px;
+    padding: 0 75px;
 }
 .radio_btn
 {
@@ -1268,8 +1292,8 @@ label
 }
 .img_quiz{
     position: relative;
-    width: 224px;
-    height: 150px;
+    width: 300px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -1277,6 +1301,7 @@ label
 }
 .img_quiz p{
     color:white;
+    font-size:25px;
 }
 .active_img_quiz
 {
@@ -1343,7 +1368,8 @@ label
     position: relative;
     box-sizing: border-box;
     border-radius:20px;
-    box-shadow: 0 0 8px 1px #a2a2a2;
+   
+    box-shadow: 0px 15px 28px 4px rgb(0 0 0 / 49%);
 }
 .quiz_field
 {
@@ -1496,7 +1522,7 @@ one_col .contact
    border: none;
    font-family: inherit;
    width: 200px;
-   border-radius: 2px;
+   border-radius: 15px;
    padding: 10px 0;
    color: #fff;
    outline: none;
@@ -1697,19 +1723,31 @@ one_col .contact
 }
 .popup {
     box-sizing: border-box;
-    height: 500px;
+    min-height: 410px;
     width: 500px;
     position: fixed;
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    padding: 20px;
-    /* margin-left: -200px; */
+    padding: 30px 48px;   
+    font-family: 'Roboto', sans-serif;
     background: #fff;
     border: 1px solid orange;
     border-radius: 4px;
     z-index: 99999;
     opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+.formS
+{
+    position: relative;
+}
+ label
+{
+    font-size: 10px;
+    font-weight: 300;
+    color: #000;
 }
 .popup input
     {
@@ -1723,17 +1761,14 @@ one_col .contact
         border-radius: 5px;
         border: none;
     }
-    .btn_m
+.popup_btn
     {
-    
-    
-    
         background-color: #6f9737;
         box-sizing: border-box;
         border: none;
         font-family: inherit;
-        max-width: 400px;
-        border-radius: 2px;
+        width: 400px;
+        border-radius: 15px;
         padding: 20px 0;
         color: #fff;
         outline: none;
@@ -1769,10 +1804,10 @@ one_col .contact
     z-index: 9999;
     overflow-y: hidden;
 }
-.popup-close {
+#popup-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: -15px;
+    right: -23px;
     color: #000;
    
     
@@ -1784,6 +1819,17 @@ one_col .contact
 #message
 {
     display: none;
+}
+
+.alert {
+    --bs-alert-bg: transparent;
+    --bs-alert-padding-x: 45px;
+}
+.alert-success {
+    border: 1px solid orange;
+    --bs-alert-color: #ffffff;
+    --bs-alert-bg: #6f9737;
+    --bs-alert-border-color: #badbcc;
 }
 #load
 {
@@ -2052,6 +2098,40 @@ one_col .contact
     }
 }
 @media screen and (max-width:585px){
+    .popup-fade .popup
+    {
+        padding: 30px 15px 30px 15px;
+    }
+    .popup {
+        box-sizing: border-box;
+        min-height: 410px;
+        width: 320px;
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 30px 15px 30px 35px;
+        font-family: 'Roboto', sans-serif;
+        background: #fff;
+        border: 1px solid orange;
+        border-radius: 4px;
+        z-index: 99999;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .popup_btn
+    {
+       
+        width: 100%;
+     
+     }
+     #popup-close
+     {
+        position: absolute;
+        top: -15px;
+        right: 0px;
+     }
     .nav_mob
     {
         display: flex;
@@ -2138,7 +2218,7 @@ one_col .contact
         border: none;
     }
     .form_box.two {
-        margin: 10px auto 80px;
+        margin: 10px auto 0;
     }
     .form_text h2 {
         font-size: 24px;
@@ -2215,7 +2295,8 @@ one_col .contact
     }
     .quiz h1
     {
-        margin-top: 0;
+        margin-top: 40px;
+        font-size: 24px;
     }
     .quiz_box {
         width: 95%;
@@ -2258,6 +2339,10 @@ one_col .contact
         min-width: 100%;
         flex-direction: column;
         align-items: center;
+    }
+    .keis
+    {
+        margin: 0 auto;
     }
     .keis_info 
     {
@@ -2363,7 +2448,7 @@ body
 
 .form_box
 {
-    margin: 50px 0;
+    margin: 50px 0 0;
 }
 .box {
  width: 100%;
@@ -2416,6 +2501,8 @@ body
     }
     .img_quiz p {
         text-align: center;
+        font-size: 15px;
+       
     }
     .quest .title
     {
@@ -2628,4 +2715,5 @@ body
     height: 60px;
 }
 }
+
 

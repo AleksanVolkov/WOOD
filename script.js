@@ -97,11 +97,11 @@ const submit = document.querySelector('#form').addEventListener('submit', functi
   
   
      console.log(message);
-     let TOKEN='5791633342:AAEOD_eKDntfzgcOco4R0WbOB9jN-SMXGyY';
+     let TOKEN='5823426116:AAEBBVSeY5DUyIipxcbQBwHbx2JyGArHyhE';
      let URI_API=`https://api.telegram.org/bot${ TOKEN }/sendMessage`;
      let CHAT_Id= '-1001830250177';
     
-  // const errorM= document.querySelector('#error');
+  const quiz= document.querySelector('.quiz');
   // const spiner = document.querySelector('#load');
   // spiner.style.display = 'block';
   
@@ -119,7 +119,7 @@ const submit = document.querySelector('#form').addEventListener('submit', functi
     thanks.style.display="flex";
     quiz_field.style.display="none";
     
-    // setTimeout(()=>{alert.style.display = 'none'},'5000')
+    setTimeout(()=>{quiz.style.display = 'none'},'3000')
   
   
   })
@@ -422,7 +422,7 @@ const submit = document.querySelector('#form').addEventListener('submit', functi
         popupOpen = document.querySelectorAll('#btn_stat'),
         modalInput = document.querySelectorAll('#modal_input');
         
-        const submitS = document.querySelector('#formS').addEventListener('submit', function(e){
+        const submitS = document.querySelectorAll('#formS').forEach(item=>{item.addEventListener('submit', function(e){
     
 
           e.preventDefault();
@@ -437,7 +437,7 @@ const submit = document.querySelector('#form').addEventListener('submit', functi
              message+=`<b>телефон клиента:</b>${phone}`;
           
              console.log(message);
-             let TOKEN='5791633342:AAEOD_eKDntfzgcOco4R0WbOB9jN-SMXGyY';
+             let TOKEN='5823426116:AAEBBVSeY5DUyIipxcbQBwHbx2JyGArHyhE';
              let URI_API=`https://api.telegram.org/bot${ TOKEN }/sendMessage`;
              let CHAT_Id= '-1001830250177';
             
@@ -451,8 +451,24 @@ const submit = document.querySelector('#form').addEventListener('submit', functi
               parse_mode:'html',
               text:message
               
-          })
+          }).then((res)=>{
+            this.name.value='';
+            this.phone.value='';
+            const alert = document.querySelectorAll('#message');
+            alert.forEach(item=>{
+              item.style.display = 'block';
+            
+              setTimeout(()=>{popClose();
+                item.style.display = 'none';
+              
+              },'3000')
+            })
+            
+        
+        
         })
+        })
+      })
         popupOpen.forEach(item=>{
           item.addEventListener('click', function (e){
             popupFade.style.display= "block";
@@ -460,11 +476,16 @@ const submit = document.querySelector('#form').addEventListener('submit', functi
         })
 
 
+
+        function popClose(){
+          popupFade.style.display = "none";
+          // alert.style.display = 'none';
+        }
         popupClose.addEventListener('click', function(e){
 
           e.preventDefault();
-          popupFade.style.display = "none";
-
+          
+          popClose()
 
         })
 
